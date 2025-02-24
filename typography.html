@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography in CSS</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            text-align: justify;
+            letter-spacing: 0.5px;
+            word-spacing: 2px;
+            text-indent: 20px;
+        }
+
+        .italic-text {
+            font-style: italic;
+        }
+
+        .underline-text {
+            text-decoration: underline;
+        }
+
+        .small-caps {
+            font-variant: small-caps;
+        }
+
+        .overflow-text {
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        .break-word {
+            width: 150px;
+            word-break: break-word;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Typography in CSS</h1>
+    
+    <p>This is an example of typography styling in CSS. It includes font size, alignment, and spacing.</p>
+    
+    <p class="italic-text">This text is italicized.</p>
+    
+    <p class="underline-text">This text has an underline.</p>
+    
+    <p class="small-caps">This text is in small caps.</p>
+    
+    <p class="overflow-text">This is an example of text-overflow using ellipsis. This text is too long to fit in the container.</p>
+    
+    <p class="break-word">ThisIsAReallyLongWordThatWillBreakProperly.</p>
+</body>
+</html>

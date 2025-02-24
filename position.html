@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property Example</title>
+    <style>
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        .static-box {
+            position: static;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: rgb(54, 178, 219);
+            padding: 10px;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgb(33, 173, 33);
+            padding: 10px;
+            color: white;
+        }
+
+        .fixed-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgb(0, 255, 200);
+            padding: 10px;
+        }
+
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background-color: pink;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Position Property Example</h1>
+
+    <div class="static-box">Static Position (Default)</div>
+
+    <div class="container">
+        <div class="relative-box">Relative Position</div>
+        <div class="absolute-box">Absolute Position</div>
+    </div>
+
+    <div class="sticky-box">Sticky Position (Scroll to see effect)</div>
+
+    <div style="height: 1000px;">Scroll down to see the fixed box.</div>
+
+    <div class="fixed-box">Fixed Position</div>
+
+</body>
+</html>

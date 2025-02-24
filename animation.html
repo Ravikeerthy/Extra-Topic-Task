@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Example</title>
+    <style>
+        .animation-box {
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+            position: relative;
+            animation: moveBox 5s infinite alternate ease-in-out;
+        }
+
+        @keyframes moveBox {
+            0% {
+                left: 0;
+                background-color: steelblue;
+            }
+            50% {
+                left: 150px;
+                background-color: coral;
+            }
+            100% {
+                left: 300px;
+                background-color: mediumseagreen;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Animation</h1>
+
+    <div class="animation-box"></div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: lightblue;
+        }
+
+        .box {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: steelblue;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+       
+        @media (max-width: 600px) {
+            body {
+                background-color: lightcoral;
+            }
+
+            .box {
+                width: 90%;
+                font-size: 16px;
+                background-color: darkblue;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Media Query</h1>
+    <div class="box">Resize the window to see the effect!</div>
+
+</body>
+</html>

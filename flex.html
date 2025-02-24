@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+    <style>
+        .container {
+            background-color: rgb(222, 40, 204);
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .item {
+            background-color: rgb(70, 189, 228);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .container-items {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .item-s {
+            background-color: lightcoral;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .item-s:nth-child(1) {
+            flex-grow: 1;
+        }
+
+        .item-s:nth-child(2) {
+            flex-shrink: 0;
+        }
+
+        .item-s:nth-child(3) {
+            flex-basis: 200px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Flex Container</h1>
+    <p>Defines a flex container and enables the flex context for its direct children.</p>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <h1>Flex Items</h1>
+    <div class="container-items">
+        <div class="item-s">Item 1</div>
+        <div class="item-s">Item 2</div>
+        <div class="item-s">Item 3</div>
+    </div>
+
+</body>
+
+</html>
